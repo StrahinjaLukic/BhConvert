@@ -1,5 +1,5 @@
 # BhConvert
-Scripts to convert ascii output from BHLUMI and BHWIDE to stdhep and slcio formats.
+## Scripts to convert ascii output from BHLUMI and BHWIDE to stdhep and slcio formats.
 
 Demo routines shipped with the BHLUMI and BHWIDE Bhabha event generators can be run
 in the "detector simulation" mode to produce ascii output files containing the 
@@ -15,8 +15,8 @@ Move to the parent of the source folder. Then:
 
 mkdir build
 cd build
-cmake -D LCIO_DIR=<lcio installation folder> -D STDHEP_DIR=<stdhep installation folder> ../<BhConvert source folder>
-(You may omit the STDHEP_DIR)
+cmake -D LCIO\_DIR=\<lcio installation folder\> -D STDHEP\_DIR=\<stdhep installation folder\> ../\<BhConvert source folder\>
+\(You may omit the STDHEP\_DIR\)
 make
 
 If the buld is successful, the bhlumi2slcio executable will be created in folder 
@@ -24,11 +24,11 @@ bhlumi2slcio/ and, optionally, the bhlumi2stdhep executable will be created in f
 
 
 Execution:
-bhlumi2slcio/bhlumi2slcio <path> [<slcio file name>] [<lepton text file name>] [<photon text file name>]
+bhlumi2slcio/bhlumi2slcio \<path\> \[\<slcio file name\>\] \[\<lepton text file name\>\] \[\<photon text file name\>\]
 
-<path> is the path to the folder with text files. The slcio file will be produced in the same folder.
-<slcio file name> is the desired (generic) name for the slcio files. 
+\<path\> is the path to the folder with text files. The slcio file will be produced in the same folder.
+\<slcio file name\> is the desired (generic) name for the slcio files. 
   The actual names will be constructed by appending file numbers before the .slcio extension.
   Default: "bhabha" 
-<lepton text file name> is the Bhlumi output file with lepton 4-vectors. Default "bhabha.dat"
-<photon text file name> is the Bhlumi output file with photon 4-vectors. Default "bhabha_photon.dat"
+\<lepton text file name\> is the Bhlumi output file with lepton 4-vectors. Default "bhabha.dat"
+\<photon text file name\> is the Bhlumi output file with photon 4-vectors. Default "bhabha_photon.dat"
